@@ -1,0 +1,59 @@
+type Query {
+    movieById(id: ID!): Movie
+    moviesByYear(year: Int!): [Movie!]
+    moviesByRated(rated: String!): [Movie!]
+    movieByGenres(genres: String): [Movie]
+    moviesPaginate(number: Int!): [Movie]
+    randomMovie: Movie
+}
+
+type Library {
+    branch: String!
+    books: [Book!]
+}
+
+type Book {
+    title: String!
+    author: Author!
+}
+
+type Author {
+    name: String!
+}
+
+type Movie {
+    _id: ID!
+    plot: String
+    cast: [String!]
+    tomatoes: Tomatoes
+    fullplot: String
+    title: String!
+    year: Int
+    genres: [String]
+    directors: [String]
+    poster: String
+    slug: String
+    imdb: Imdb
+    similarMoviesByGenre: [Movie],
+    comments: [Comments!]
+}
+
+type Comments {
+    name: String,
+    email: String,
+    text: String!
+}
+
+type Tomatoes {
+    viewer: Viewer
+}
+
+type Imdb {
+    rating: Float
+    votes: Int
+}
+
+type Viewer {
+    rating: Float
+    numReviews: Float
+}
