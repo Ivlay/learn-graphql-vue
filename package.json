@@ -1,0 +1,56 @@
+{
+  "name": "client-graphql",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "apollo-boost": "^0.4.9",
+    "core-js": "^3.6.5",
+    "graphql": "^15.4.0",
+    "vue": "^2.6.11",
+    "vue-apollo": "^3.0.5",
+    "vue-router": "^3.4.9"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.9",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-typescript": "^4.5.9",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "graphql-tag": "^2.9.0",
+    "less": "^3.12.2",
+    "less-loader": "^7.1.0",
+    "typescript": "~3.9.3",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "@vue/typescript"
+    ],
+    "parserOptions": {
+      "parser": "@typescript-eslint/parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
