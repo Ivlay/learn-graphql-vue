@@ -2,7 +2,7 @@ import express          from 'express';
 import { ApolloServer } from 'apollo-server-express';
 import mongoose         from 'mongoose';
 import schema           from './schema';
-const uri = 'mongodb+srv://fiva:836063abc@cluster0.rrnof.mongodb.net/sample_mflix?retryWrites=true&w=majority';
+const uri = '';
 
 const PORT = 3005;
 
